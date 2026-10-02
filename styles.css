@@ -71,7 +71,7 @@ header {
   display: block;
   flex-shrink: 0;
   width: auto;
-  height: 40px;
+  height: 72px;
   object-fit: contain;
 }
 
@@ -292,7 +292,7 @@ a.project-card:focus-visible .arrow {
   }
 
   .header-logo {
-    height: 32px;
+    height: 48px;
     margin-top: 5px;
   }
 
