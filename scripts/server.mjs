@@ -4,7 +4,7 @@ import { dirname, extname, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.pdf': 'application/pdf' };
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.pdf': 'application/pdf', '.jpg': 'image/jpeg' };
 const requestedPort = Number(process.env.PORT || 3000);
 
 const server = createServer(async (request, response) => {
@@ -15,7 +15,7 @@ const server = createServer(async (request, response) => {
   try {
     const path = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
     const file = resolve(root, `.${path === '/' ? '/index.html' : path}`);
-    const allowed = ['index.html', 'styles.css', 'favicon.svg', 'public/Sam_McFarland_Resume.pdf'];
+    const allowed = ['index.html', 'styles.css', 'favicon.svg', 'public/Sam_McFarland_Resume.pdf', 'public/spectrumiq.jpg'];
     const relative = file.slice(root.length + 1).split(sep).join('/');
     if (!file.startsWith(root + sep) || !allowed.includes(relative) || !(await stat(file)).isFile()) {
       response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
