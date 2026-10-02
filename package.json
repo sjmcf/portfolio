@@ -1,0 +1,11 @@
+{
+  "name": "sam-mcfarland-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sam McFarland's personal portfolio",
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

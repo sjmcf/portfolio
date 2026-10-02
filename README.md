@@ -1,0 +1,23 @@
+# Sam McFarland — Projects
+
+A minimal, responsive portfolio: five project cards categorized by technical area, with direct demo links. Plain HTML and CSS, with bold Space Grotesk typography. No JavaScript or runtime dependencies.
+
+## Preview
+
+Open `index.html` directly, or run `npm run dev` and visit **http://localhost:3000**. For a different port, use `PORT=3001 npm run dev`.
+
+## Edit
+
+- Project names and demo links: `index.html`.
+- Fonts, colors, and spacing: `styles.css` (font loading is in `index.html`).
+- Resume: `public/Sam_McFarland_Resume.pdf`.
+
+The technical categories are Mobile / iOS (Scramble), Full-Stack Web AI Dev Tool (Ancori), Chrome Extension (OneTap), Full-Stack Web (WolfTrade), and Algorithms / Optimization / Bidding and Auctions (SpectrumIQ).
+
+Ancori, OneTap, and WolfTrade demo URLs come from the resume. Scramble links to the supplied TestFlight invitation. SpectrumIQ includes the two supplied LinkedIn posts; it has no public demo.
+
+Google Fonts loads Space Grotesk when online. Local font fallbacks are included.
+
+## Build
+
+Run `npm run build` and upload the contents of `dist/` to any static host. No backend or environment variables are required.
