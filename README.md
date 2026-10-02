@@ -12,6 +12,8 @@ Open `index.html` directly, or run `npm run dev` and visit **http://localhost:30
 - Fonts, colors, and spacing: `styles.css` (font loading is in `index.html`).
 - Resume: `public/Sam_McFarland_Resume.pdf`.
 
+The original `Sam_McFarland_Resume.pdf` in the repository root is ignored by Git. The copy in `public/` stays tracked so deployments can include the Resume download.
+
 The technical categories are Mobile / iOS (Scramble), Full-Stack Web AI Dev Tool (Ancori), Chrome Extension (OneTap), Full-Stack Web (WolfTrade), and Algorithms / Optimization / Bidding and Auctions (SpectrumIQ).
 
 Ancori, OneTap, and WolfTrade demo URLs come from the resume. Scramble links to the supplied TestFlight invitation. SpectrumIQ includes the two supplied LinkedIn posts; it has no public demo.
