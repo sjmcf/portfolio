@@ -48,7 +48,7 @@ a:focus-visible {
 .page {
   width: min(100% - 96px, 1000px);
   margin: 0 auto;
-  padding: 76px 0 64px;
+  padding: 36px 0 64px;
 }
 
 header {
@@ -260,7 +260,7 @@ a.project-card:focus-visible .arrow {
 @media (max-width: 600px) {
   .page {
     width: calc(100% - 40px);
-    padding-top: 48px;
+    padding-top: 28px;
     padding-bottom: 40px;
   }
 
