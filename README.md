@@ -12,6 +12,7 @@ Open `index.html` directly, or run `npm run dev` and visit **http://localhost:30
 - Fonts, colors, and spacing: `styles.css` (font loading is in `index.html`).
 - Resume: `public/Sam_McFarland_Resume.pdf`.
 - SpectrumIQ photo: `public/spectrumiq.jpg`. It sits on the right side of the card on desktop and below the links on mobile. CSS crops it to fit while preserving its proportions.
+- Vanderbilt logo: `public/vanderbilt-logo.png`. It sits at the upper-right of the header, 40px tall on desktop and 32px on mobile, with its original proportions.
 
 The original `Sam_McFarland_Resume.pdf` in the repository root is ignored by Git. The copy in `public/` stays tracked so deployments can include the Resume download.
 

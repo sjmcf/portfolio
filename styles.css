@@ -59,8 +59,25 @@ header {
   margin-bottom: 36px;
 }
 
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+.header-logo {
+  display: block;
+  flex-shrink: 0;
+  width: auto;
+  height: 40px;
+  object-fit: contain;
+}
+
 h1 {
   margin: 0;
+  min-width: 0;
   font-family: var(--display);
   font-size: clamp(48px, 7.5vw, 90px);
   font-weight: 700;
@@ -267,6 +284,16 @@ a.project-card:focus-visible .arrow {
   header {
     gap: 22px;
     margin-bottom: 28px;
+  }
+
+  .header-title {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .header-logo {
+    height: 32px;
+    margin-top: 5px;
   }
 
   h1 {
