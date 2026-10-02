@@ -21,3 +21,11 @@ Google Fonts loads Space Grotesk when online. Local font fallbacks are included.
 ## Build
 
 Run `npm run build` and upload the contents of `dist/` to any static host. No backend or environment variables are required.
+
+## Vercel
+
+Import the GitHub repository into Vercel with the repository root as the Root Directory. The included `vercel.json` selects the Other framework preset, runs `npm run build`, and publishes `dist/`.
+
+Keep the Output Directory set to `dist`, not `public`. The `public/` folder contains only the resume; the generated homepage is `dist/index.html`.
+
+For an existing project, the configuration takes effect on its next deployment. If needed, use the latest deployment's Redeploy action and ensure it uses the commit containing `vercel.json`.
