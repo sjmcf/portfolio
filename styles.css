@@ -56,7 +56,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  margin-bottom: 76px;
+  margin-bottom: 36px;
 }
 
 h1 {
@@ -266,7 +266,7 @@ a.project-card:focus-visible .arrow {
 
   header {
     gap: 22px;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
   }
 
   h1 {
