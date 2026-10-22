@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 await rm(resolve(root, 'dist'), { recursive: true, force: true });
 await mkdir(resolve(root, 'dist/public'), { recursive: true });
-for (const file of ['index.html', 'styles.css', 'favicon.svg', 'public/Sam_McFarland_Resume.pdf', 'public/spectrumiq.jpg', 'public/vanderbilt-logo.png']) {
+for (const file of ['index.html', 'styles.css', 'favicon.svg', 'Scramble.png', 'Ancori.png', 'OneTap.png', 'WolfTradeLogoOpenGraph.png', 'public/Sam_McFarland_Resume.pdf', 'public/spectrumiq.jpg', 'public/vanderbilt-logo.png']) {
   await copyFile(resolve(root, file), resolve(root, 'dist', file));
 }
 

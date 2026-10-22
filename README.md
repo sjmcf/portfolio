@@ -11,6 +11,7 @@ Open `index.html` directly, or run `npm run dev` and visit **http://localhost:30
 - Project names and demo links: `index.html`.
 - Fonts, colors, and spacing: `styles.css` (font loading is in `index.html`).
 - Resume: `public/Sam_McFarland_Resume.pdf`.
+- Project pictures: `Scramble.png`, `Ancori.png`, `OneTap.png`, and `WolfTradeLogoOpenGraph.png`. Each appears above its project's title and link in a consistent image area, with the full picture visible on desktop and mobile.
 - SpectrumIQ photo: `public/spectrumiq.jpg`. It sits on the right side of the card on desktop and below the links on mobile. CSS crops it to fit while preserving its proportions.
 - Vanderbilt logo: `public/vanderbilt-logo.png`. It sits at the upper-right of the header, 72px tall on desktop and 48px on mobile, with its original proportions.
 

@@ -15,7 +15,7 @@ const server = createServer(async (request, response) => {
   try {
     const path = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
     const file = resolve(root, `.${path === '/' ? '/index.html' : path}`);
-    const allowed = ['index.html', 'styles.css', 'favicon.svg', 'public/Sam_McFarland_Resume.pdf', 'public/spectrumiq.jpg', 'public/vanderbilt-logo.png'];
+    const allowed = ['index.html', 'styles.css', 'favicon.svg', 'Scramble.png', 'Ancori.png', 'OneTap.png', 'WolfTradeLogoOpenGraph.png', 'public/Sam_McFarland_Resume.pdf', 'public/spectrumiq.jpg', 'public/vanderbilt-logo.png'];
     const relative = file.slice(root.length + 1).split(sep).join('/');
     if (!file.startsWith(root + sep) || !allowed.includes(relative) || !(await stat(file)).isFile()) {
       response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });

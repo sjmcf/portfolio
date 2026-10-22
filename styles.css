@@ -138,6 +138,35 @@ h2 {
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
+.project-card.card-with-image {
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #fafafa;
+  border-bottom: 1px solid var(--card-border, var(--line));
+}
+
+.card-wolftrade .project-image { background: #061925; }
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 36px;
+  width: 100%;
+  min-height: 210px;
+  padding: 30px;
+}
+
 .card-scramble {
   --card-paper: #eaf0df;
   --card-border: #d7e0c9;
@@ -322,7 +351,8 @@ a.project-card:focus-visible .arrow {
     margin-bottom: 12px;
   }
 
-  .project-card {
+  .project-card,
+  .project-card-content {
     padding: 26px;
     min-height: 190px;
     gap: 30px;
